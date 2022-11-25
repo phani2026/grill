@@ -1,9 +1,7 @@
-package com.phani.grill.service;
+package com.phani.grill.redis.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
-import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +12,7 @@ import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
 @Service
-public class GrillService {
+public class RedisService {
 
     Map<String, List<String>> map = new ConcurrentHashMap<>();
 

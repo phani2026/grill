@@ -1,4 +1,4 @@
-package com.phani.grill.config;
+package com.phani.grill.redis.config;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;
